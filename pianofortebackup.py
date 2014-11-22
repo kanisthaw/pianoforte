@@ -3,7 +3,7 @@ from Tkinter import *
 class Application(Frame):
     def createWidgets(self):
         self.QUIT = Button(self)
-        self.QUIT["text"] = "Close"
+        self.QUIT["text"] = "QUIT"
         self.QUIT["fg"]   = "red"
         self.QUIT["command"] =  self.quit
 
