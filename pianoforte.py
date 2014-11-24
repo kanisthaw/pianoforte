@@ -1,11 +1,11 @@
 from Tkinter import *
 
-bgcolor = "#6C7A89"
+bgcolor = "#FFFFFF"
 
 root = Tk()
 root.config(bg=bgcolor)
 root.title("Pianoforte")
-root.geometry("500x500")
+root.geometry("800x500")
 
 
 #FUNTION FOR CHANGING IMAGE _ MAJOR
@@ -132,7 +132,7 @@ def printphoto_Bm():
     mlabel.image = img
     
 #START_IMAGE    
-img = PhotoImage(file="C.gif")
+img = PhotoImage(file="piano.gif")
 mlabel = Label( root, image=img)
 mlabel.pack()
 #FRAME01
@@ -141,7 +141,7 @@ frame.pack(fill=X, pady=10)
 #MAJORCHORDNAME
 var = StringVar()
 label = Label( frame, textvariable=var, bg=bgcolor)
-var.set("Major Chords")
+var.set(" Major Chords")
 label.pack(side=LEFT)
 #MAJORCHORD
 cord_c = Button(frame, text="C", fg="red", command = printphoto_C)
@@ -183,10 +183,9 @@ cord_Bb.pack(side=LEFT, ipadx=4)
 cord_B = Button(frame, text="B", fg="red", command = printphoto_B)
 cord_B.pack(side=LEFT, ipadx=4)
 
-
 #FRAME02
 frame = Frame(root, bg=bgcolor)
-frame.pack(fill=X)
+frame.pack(fill=X, pady=10)
 #MAJORCHORDNAME
 var = StringVar()
 label = Label( frame, textvariable=var, bg=bgcolor)
@@ -232,5 +231,49 @@ cord_Bbm.pack(side=LEFT, ipadx=4)
 cord_Bm = Button(frame, text="Bm", fg="blue", command = printphoto_Bm)
 cord_Bm.pack(side=LEFT, ipadx=4)
 
+#FRAME03
+frame = Frame(root, bg=bgcolor)
+frame.pack(fill=X, pady=10)
+#MAJORCHORDNAME
+var = StringVar()
+label = Label( frame, textvariable=var, bg=bgcolor)
+var.set("Dominant 7th Chords")
+label.pack(side=LEFT, ipadx=4)
+#MAJORCHORD
+cord_Cm = Button(frame, text="C7", fg="blue", command = printphoto_Cm)
+cord_Cm.pack(side=LEFT, ipadx=4)
+
+cord_CLm = Button(frame, text="Db7", fg="blue", command = printphoto_CLm)
+cord_CLm.pack(side=LEFT, ipadx=4)
+
+cord_Dm = Button(frame, text="D7", fg="blue", command = printphoto_Dm)
+cord_Dm.pack(side=LEFT, ipadx=4)
+
+cord_Ebm = Button(frame, text="Eb7", fg="blue", command = printphoto_Ebm)
+cord_Ebm.pack(side=LEFT, ipadx=4)
+
+cord_DLm = Button(frame, text="E7", fg="blue", command = printphoto_DLm)
+cord_DLm.pack(side=LEFT, ipadx=4)
+
+cord_Em = Button(frame, text="F7", fg="blue", command = printphoto_Em)
+cord_Em.pack(side=LEFT, ipadx=4)
+
+cord_Fm = Button(frame, text="F#7", fg="blue", command = printphoto_Fm)
+cord_Fm.pack(side=LEFT, ipadx=4)
+
+cord_FLm = Button(frame, text="G7", fg="blue", command = printphoto_FLm)
+cord_FLm.pack(side=LEFT, ipadx=4)
+
+cord_Gm = Button(frame, text="Ab7", fg="blue", command = printphoto_Gm)
+cord_Gm.pack(side=LEFT, ipadx=4)
+
+cord_GLm = Button(frame, text="A7", fg="blue", command = printphoto_GLm)
+cord_GLm.pack(side=LEFT, ipadx=4)
+
+cord_Am = Button(frame, text="Bb7", fg="blue", command = printphoto_Am)
+cord_Am.pack(side=LEFT, ipadx=4)
+
+cord_Bbm = Button(frame, text="B7", fg="blue", command = printphoto_Bbm)
+cord_Bbm.pack(side=LEFT, ipadx=4)
 
 root.mainloop()
