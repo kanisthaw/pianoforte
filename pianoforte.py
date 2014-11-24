@@ -8,7 +8,7 @@ root.title("Pianoforte")
 root.geometry("500x500")
 
 
-#FUNTION FOR CHANGING IMAGE
+#FUNTION FOR CHANGING IMAGE _ MAJOR
 def printphoto_C():
     img = PhotoImage(file="C.gif")
     mlabel.config(image=img)
@@ -75,6 +75,61 @@ def printphoto_B():
     img = PhotoImage(file="B.gif")
     mlabel.config(image=img)
     mlabel.image = img
+
+#FUNTION FOR CHANGING IMAGE _ MINOR
+
+def printphoto_Cm():
+    img = PhotoImage(file="Cm.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+def printphoto_CLm():
+    img = PhotoImage(file="CLm.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+def printphoto_Dm():
+    img = PhotoImage(file="Dm.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+def printphoto_Ebm():
+    img = PhotoImage(file="Ebm.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+def printphoto_DLm():
+    img = PhotoImage(file="DLm.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+def printphoto_Em():
+    img = PhotoImage(file="Em.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+def printphoto_Fm():
+    img = PhotoImage(file="Fm.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+def printphoto_FLm():
+    img = PhotoImage(file="FLm.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+def printphoto_Gm():
+    img = PhotoImage(file="Gm.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+def printphoto_GLm():
+    img = PhotoImage(file="GLm.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+def printphoto_Am():
+    img = PhotoImage(file="Am.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+def printphoto_Bbm():
+    img = PhotoImage(file="Bbm.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+def printphoto_Bm():
+    img = PhotoImage(file="Bm.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
     
 #START_IMAGE    
 img = PhotoImage(file="C.gif")
@@ -136,23 +191,46 @@ frame.pack(fill=X)
 var = StringVar()
 label = Label( frame, textvariable=var, bg=bgcolor)
 var.set("Minor Chords")
-label.pack(side=LEFT)
+label.pack(side=LEFT, ipadx=4)
 #MAJORCHORD
-cord_Cm = Button(frame, text="Cm", fg="blue")
-cord_Cm.pack(side=LEFT)
+cord_Cm = Button(frame, text="Cm", fg="blue", command = printphoto_Cm)
+cord_Cm.pack(side=LEFT, ipadx=4)
 
-cord_CLm = Button(frame, text="C#m", fg="blue")
-cord_CLm.pack(side=LEFT)
+cord_CLm = Button(frame, text="C#m", fg="blue", command = printphoto_CLm)
+cord_CLm.pack(side=LEFT, ipadx=4)
 
-cord_Dm = Button(frame, text="Dm", fg="blue")
-cord_Dm.pack(side=LEFT)
+cord_Dm = Button(frame, text="Dm", fg="blue", command = printphoto_Dm)
+cord_Dm.pack(side=LEFT, ipadx=4)
 
-cord_Ebm = Button(frame, text="Ebm", fg="blue")
-cord_Ebm.pack(side=LEFT)
+cord_Ebm = Button(frame, text="Ebm", fg="blue", command = printphoto_Ebm)
+cord_Ebm.pack(side=LEFT, ipadx=4)
 
-cord_DLm = Button(frame, text="D#m", fg="blue")
-cord_DLm.pack(side=LEFT)
+cord_DLm = Button(frame, text="D#m", fg="blue", command = printphoto_DLm)
+cord_DLm.pack(side=LEFT, ipadx=4)
 
+cord_Em = Button(frame, text="Em", fg="blue", command = printphoto_Em)
+cord_Em.pack(side=LEFT, ipadx=4)
+
+cord_Fm = Button(frame, text="Fm", fg="blue", command = printphoto_Fm)
+cord_Fm.pack(side=LEFT, ipadx=4)
+
+cord_FLm = Button(frame, text="F#m", fg="blue", command = printphoto_FLm)
+cord_FLm.pack(side=LEFT, ipadx=4)
+
+cord_Gm = Button(frame, text="Gm", fg="blue", command = printphoto_Gm)
+cord_Gm.pack(side=LEFT, ipadx=4)
+
+cord_GLm = Button(frame, text="G#m", fg="blue", command = printphoto_GLm)
+cord_GLm.pack(side=LEFT, ipadx=4)
+
+cord_Am = Button(frame, text="Am", fg="blue", command = printphoto_Am)
+cord_Am.pack(side=LEFT, ipadx=4)
+
+cord_Bbm = Button(frame, text="Bbm", fg="blue", command = printphoto_Bbm)
+cord_Bbm.pack(side=LEFT, ipadx=4)
+
+cord_Bm = Button(frame, text="Bm", fg="blue", command = printphoto_Bm)
+cord_Bm.pack(side=LEFT, ipadx=4)
 
 
 root.mainloop()
