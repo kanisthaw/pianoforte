@@ -19,6 +19,62 @@ def printphoto_Db():
     img = PhotoImage(file="Db.gif")
     mlabel.config(image=img)
     mlabel.image = img
+
+def printphoto_D():
+    img = PhotoImage(file="D.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+
+def printphoto_Eb():
+    img = PhotoImage(file="Eb.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+
+
+def printphoto_E():
+    img = PhotoImage(file="E.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+
+def printphoto_F():
+    img = PhotoImage(file="F.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+
+def printphoto_FL():
+    img = PhotoImage(file="FL.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+
+def printphoto_Gb():
+    img = PhotoImage(file="Gb.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+
+def printphoto_G():
+    img = PhotoImage(file="G.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+
+def printphoto_Ab():
+    img = PhotoImage(file="Ab.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+
+def printphoto_A():
+    img = PhotoImage(file="A.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+
+def printphoto_Bb():
+    img = PhotoImage(file="Bb.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
+
+def printphoto_B():
+    img = PhotoImage(file="B.gif")
+    mlabel.config(image=img)
+    mlabel.image = img
     
 #START_IMAGE    
 img = PhotoImage(file="C.gif")
@@ -39,37 +95,37 @@ cord_c.pack(side=LEFT, ipadx=4)
 cord_Db = Button(frame, text="Db", fg="red", command = printphoto_Db)
 cord_Db.pack(side=LEFT, ipadx=4)
 
-cord_D = Button(frame, text="D", fg="red", command = printphoto_C)
+cord_D = Button(frame, text="D", fg="red", command = printphoto_D)
 cord_D.pack(side=LEFT, ipadx=4)
 
-cord_Eb = Button(frame, text="Eb", fg="red", command = printphoto_C)
+cord_Eb = Button(frame, text="Eb", fg="red", command = printphoto_Eb)
 cord_Eb.pack(side=LEFT, ipadx=4)
 
-cord_E = Button(frame, text="E", fg="red", command = printphoto_C)
+cord_E = Button(frame, text="E", fg="red", command = printphoto_E)
 cord_E.pack(side=LEFT, ipadx=4)
 
-cord_F = Button(frame, text="F", fg="red", command = printphoto_C)
+cord_F = Button(frame, text="F", fg="red", command = printphoto_F)
 cord_F.pack(side=LEFT, ipadx=4)
 
-cord_FL = Button(frame, text="F#", fg="red", command = printphoto_C)
+cord_FL = Button(frame, text="F#", fg="red", command = printphoto_FL)
 cord_FL.pack(side=LEFT, ipadx=4)
 
-cord_Gb = Button(frame, text="Gb", fg="red", command = printphoto_C)
+cord_Gb = Button(frame, text="Gb", fg="red", command = printphoto_Gb)
 cord_Gb.pack(side=LEFT, ipadx=4)
 
-cord_G = Button(frame, text="G", fg="red", command = printphoto_C)
+cord_G = Button(frame, text="G", fg="red", command = printphoto_G)
 cord_G.pack(side=LEFT, ipadx=4)
 
-cord_Ab = Button(frame, text="Ab", fg="red", command = printphoto_C)
+cord_Ab = Button(frame, text="Ab", fg="red", command = printphoto_Ab)
 cord_Ab.pack(side=LEFT, ipadx=4)
 
-cord_A = Button(frame, text="A", fg="red", command = printphoto_C)
+cord_A = Button(frame, text="A", fg="red", command = printphoto_A)
 cord_A.pack(side=LEFT, ipadx=4)
 
-cord_Bb = Button(frame, text="Bb", fg="red", command = printphoto_C)
+cord_Bb = Button(frame, text="Bb", fg="red", command = printphoto_Bb)
 cord_Bb.pack(side=LEFT, ipadx=4)
 
-cord_B = Button(frame, text="B", fg="red", command = printphoto_C)
+cord_B = Button(frame, text="B", fg="red", command = printphoto_B)
 cord_B.pack(side=LEFT, ipadx=4)
 
 
