@@ -2,18 +2,18 @@ from Tkinter import *
 
 root = Tk()
 root.title("Pianoforte")
-root.geometry("302x500+150+150")
+root.geometry("500x500+150+150")
 
 def printphoto_C():
     img = PhotoImage(file="C.gif")
-    mlabel = Label( root, image=img)
-    mlabel.pack()
+    mlabel.config(image=img)
+    mlabel.image = img
 
 
 def printphoto_Db():
     img = PhotoImage(file="Db.gif")
-    mlabel = Label( root, image=img)
-    mlabel.pack()
+    mlabel.config(image=img)
+    mlabel.image = img
     
 img = PhotoImage(file="C.gif")
 mlabel = Label( root, image=img)
@@ -51,10 +51,22 @@ cord_FL.pack(side=LEFT)
 cord_Gb = Button(frame, text="Gb", fg="red", command = printphoto_C)
 cord_Gb.pack(side=LEFT)
 
-cord_ = Button(frame, text="Gb", fg="red", command = printphoto_C)
-cord_.pack(side=LEFT)
+cord_G = Button(frame, text="G", fg="red", command = printphoto_C)
+cord_G.pack(side=LEFT)
 
-cord_ = Button(frame, text="Gb", fg="red", command = printphoto_C)
+cord_Ab = Button(frame, text="Ab", fg="red", command = printphoto_C)
+cord_Ab.pack(side=LEFT)
+
+cord_A = Button(frame, text="A", fg="red", command = printphoto_C)
+cord_A.pack(side=LEFT)
+
+cord_Bb = Button(frame, text="Bb", fg="red", command = printphoto_C)
+cord_Bb.pack(side=LEFT)
+
+cord_B = Button(frame, text="B", fg="red", command = printphoto_C)
+cord_B.pack(side=LEFT)
+
+cord_ = Button(frame, text="Ab", fg="red", command = printphoto_C)
 cord_.pack(side=LEFT)
 
 #FRAME02
