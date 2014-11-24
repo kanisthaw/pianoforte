@@ -1,9 +1,14 @@
 from Tkinter import *
 
-root = Tk()
-root.title("Pianoforte")
-root.geometry("500x500+150+150")
+bgcolor = "#6C7A89"
 
+root = Tk()
+root.config(bg=bgcolor)
+root.title("Pianoforte")
+root.geometry("302x500+150+150")
+
+
+#FUNTION FOR CHANGING IMAGE
 def printphoto_C():
     img = PhotoImage(file="C.gif")
     mlabel.config(image=img)
@@ -15,15 +20,16 @@ def printphoto_Db():
     mlabel.config(image=img)
     mlabel.image = img
     
+#START_IMAGE    
 img = PhotoImage(file="C.gif")
 mlabel = Label( root, image=img)
 mlabel.pack()
 #FRAME01
-frame = Frame(root)
+frame = Frame(root, bg=bgcolor)
 frame.pack(fill=X)
 #MAJORCHORDNAME
 var = StringVar()
-label = Label( frame, textvariable=var)
+label = Label( frame, textvariable=var, bg=bgcolor)
 var.set("Major Chords")
 label.pack(side=LEFT)
 #MAJORCHORD
@@ -70,11 +76,11 @@ cord_ = Button(frame, text="Ab", fg="red", command = printphoto_C)
 cord_.pack(side=LEFT)
 
 #FRAME02
-frame = Frame(root)
+frame = Frame(root, bg=bgcolor)
 frame.pack(fill=X)
 #MAJORCHORDNAME
 var = StringVar()
-label = Label( frame, textvariable=var)
+label = Label( frame, textvariable=var, bg=bgcolor)
 var.set("Minor Chords")
 label.pack(side=LEFT)
 #MAJORCHORD
