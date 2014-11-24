@@ -1,21 +1,86 @@
 from Tkinter import *
 
-class Application(Frame):
-    def createWidgets(self):
-        self.QUIT = Button(self)
-        self.QUIT["text"] = "Close"
-        self.QUIT["fg"]   = "red"
-        self.QUIT["command"] =  self.quit
-
-        self.QUIT.pack({"side": "left"})
-    def __init__(self, master=None):
-        Frame.__init__(self, master)
-        self.pack()
-        self.createWidgets()
-
 root = Tk()
-myapp = Application(master=root)
-myapp.master.title("Pianoforte")
-myapp.master.maxsize(1000, 400)
-myapp.mainloop()
-root.destroy()
+root.title("Pianoforte")
+root.geometry("302x500+150+150")
+
+def printphoto_C():
+    img = PhotoImage(file="C.gif")
+    mlabel = Label( root, image=img)
+    mlabel.pack()
+
+
+def printphoto_Db():
+    img = PhotoImage(file="Db.gif")
+    mlabel = Label( root, image=img)
+    mlabel.pack()
+    
+img = PhotoImage(file="C.gif")
+mlabel = Label( root, image=img)
+mlabel.pack()
+#FRAME01
+frame = Frame(root)
+frame.pack(fill=X)
+#MAJORCHORDNAME
+var = StringVar()
+label = Label( frame, textvariable=var)
+var.set("Major Chords")
+label.pack(side=LEFT)
+#MAJORCHORD
+cord_c = Button(frame, text="C", fg="red", command = printphoto_C)
+cord_c.pack(side=LEFT)
+
+cord_Db = Button(frame, text="Db", fg="red", command = printphoto_Db)
+cord_Db.pack(side=LEFT)
+
+cord_D = Button(frame, text="D", fg="red", command = printphoto_C)
+cord_D.pack(side=LEFT)
+
+cord_Eb = Button(frame, text="Eb", fg="red", command = printphoto_C)
+cord_Eb.pack(side=LEFT)
+
+cord_E = Button(frame, text="E", fg="red", command = printphoto_C)
+cord_E.pack(side=LEFT)
+
+cord_F = Button(frame, text="F", fg="red", command = printphoto_C)
+cord_F.pack(side=LEFT)
+
+cord_FL = Button(frame, text="F#", fg="red", command = printphoto_C)
+cord_FL.pack(side=LEFT)
+
+cord_Gb = Button(frame, text="Gb", fg="red", command = printphoto_C)
+cord_Gb.pack(side=LEFT)
+
+cord_ = Button(frame, text="Gb", fg="red", command = printphoto_C)
+cord_.pack(side=LEFT)
+
+cord_ = Button(frame, text="Gb", fg="red", command = printphoto_C)
+cord_.pack(side=LEFT)
+
+#FRAME02
+frame = Frame(root)
+frame.pack(fill=X)
+#MAJORCHORDNAME
+var = StringVar()
+label = Label( frame, textvariable=var)
+var.set("Minor Chords")
+label.pack(side=LEFT)
+#MAJORCHORD
+cord_Cm = Button(frame, text="Cm", fg="blue")
+cord_Cm.pack(side=LEFT)
+
+cord_CLm = Button(frame, text="C#m", fg="blue")
+cord_CLm.pack(side=LEFT)
+
+cord_Dm = Button(frame, text="Dm", fg="blue")
+cord_Dm.pack(side=LEFT)
+
+cord_Ebm = Button(frame, text="Ebm", fg="blue")
+cord_Ebm.pack(side=LEFT)
+
+cord_DLm = Button(frame, text="D#m", fg="blue")
+cord_DLm.pack(side=LEFT)
+
+
+
+root.mainloop()
