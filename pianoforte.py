@@ -175,54 +175,80 @@ def printphoto_C7():
     img = PhotoImage(file="C7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "C7 Dominant 7th"
+    labeltext.config(text=text)
 def printphoto_Cb7():
     img = PhotoImage(file="Cb7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Cb7 Dominant 7th"
+    labeltext.config(text=text)
 def printphoto_Db7():
     img = PhotoImage(file="Db7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Db7 Dominant 7th"
+    labeltext.config(text=text)
 def printphoto_D7():
     img = PhotoImage(file="D7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "D7 Dominant 7th"
+    labeltext.config(text=text)
 def printphoto_Eb7():
     img = PhotoImage(file="Eb7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Eb7 Dominant 7th"
+    labeltext.config(text=text)
 def printphoto_E7():
     img = PhotoImage(file="E7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "E7 Dominant 7th"
+    labeltext.config(text=text)
 def printphoto_F7():
     img = PhotoImage(file="F7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "F7 Dominant 7th"
+    labeltext.config(text=text)
 def printphoto_G7():
     img = PhotoImage(file="G7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "G7 Dominant 7th"
+    labeltext.config(text=text)
 def printphoto_FL7():
     img = PhotoImage(file="FL7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "F#7 Dominant 7th"
+    labeltext.config(text=text)
 def printphoto_Ab7():
     img = PhotoImage(file="Ab7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Ab7 Dominant 7th"
+    labeltext.config(text=text)
 def printphoto_A7():
     img = PhotoImage(file="A7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "A7 Dominant 7th"
+    labeltext.config(text=text)
 def printphoto_Bb7():
     img = PhotoImage(file="Bb7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Bb7 Dominant 7th"
+    labeltext.config(text=text)
 def printphoto_B7():
     img = PhotoImage(file="B7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "B7 Dominant 7th"
+    labeltext.config(text=text)
 
 #FUNTION4 FOR CHANGING IMAGE _  Major_7th_Chords
 
@@ -230,50 +256,74 @@ def printphoto_Cmaj7():
     img = PhotoImage(file="Cmaj7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Cmaj7 Major 7th Chords"
+    labeltext.config(text=text)
 def printphoto_Dbmaj7():
     img = PhotoImage(file="Dbmaj7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Dbmaj7 Major 7th Chords"
+    labeltext.config(text=text)
 def printphoto_Dmaj7():
     img = PhotoImage(file="Dmaj7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = " Major 7th Chords"
+    labeltext.config(text=text)
 def printphoto_Ebmaj7():
     img = PhotoImage(file="Ebmaj7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Ebmaj7 Major 7th Chords"
+    labeltext.config(text=text)
 def printphoto_Emaj7():
     img = PhotoImage(file="Emaj7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Emaj7 Major 7th Chords"
+    labeltext.config(text=text)
 def printphoto_Fmaj7():
     img = PhotoImage(file="Fmaj7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Fmaj7 Major 7th Chords"
+    labeltext.config(text=text)
 def printphoto_FLmaj7():
     img = PhotoImage(file="FLmaj7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "F#maj7 Major 7th Chords"
+    labeltext.config(text=text)
 def printphoto_Gmaj7():
     img = PhotoImage(file="Gmaj7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Gmaj7 Major 7th Chords"
+    labeltext.config(text=text)
 def printphoto_Abmaj7():
     img = PhotoImage(file="Abmaj7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Abmaj7 Major 7th Chords"
+    labeltext.config(text=text)
 def printphoto_Amaj7():
     img = PhotoImage(file="Amaj7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Amaj7 Major 7th Chords"
+    labeltext.config(text=text)
 def printphoto_Bbmaj7():
     img = PhotoImage(file="Bbmaj7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Bbmaj7 Major 7th Chords"
+    labeltext.config(text=text)
 def printphoto_Bmaj7():
     img = PhotoImage(file="Bmaj7.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Bmaj7 Major 7th Chords"
+    labeltext.config(text=text)
     
 #START_IMAGE
 labeltext = Label(root, text="PIANO CHORDS", bg=bgcolor)
@@ -392,40 +442,40 @@ label = Label( frame, textvariable=var, bg=bgcolor)
 var.set("Dominant 7th Chords")
 label.pack(side=LEFT, ipadx=4)
 #Dominant_7th_Chords
-chord_C7 = Button(frame, text="C7", fg="OrangeRed1", command = printphoto_C7)
+chord_C7 = Button(frame, text="C7", fg="Blue", command = printphoto_C7)
 chord_C7.pack(side=LEFT, ipadx=4)
 
-chord_Db7 = Button(frame, text="Db7", fg="OrangeRed1", command = printphoto_Db7)
+chord_Db7 = Button(frame, text="Db7", fg="Blue", command = printphoto_Db7)
 chord_Db7.pack(side=LEFT, ipadx=4)
 
-chord_D7 = Button(frame, text="D7", fg="OrangeRed1", command = printphoto_D7)
+chord_D7 = Button(frame, text="D7", fg="Blue", command = printphoto_D7)
 chord_D7.pack(side=LEFT, ipadx=4)
 
-chord_Eb7 = Button(frame, text="Eb7", fg="OrangeRed1", command = printphoto_Eb7)
+chord_Eb7 = Button(frame, text="Eb7", fg="Blue", command = printphoto_Eb7)
 chord_Eb7.pack(side=LEFT, ipadx=4)
 
-chord_E7 = Button(frame, text="E7", fg="OrangeRed1", command = printphoto_E7)
+chord_E7 = Button(frame, text="E7", fg="Blue", command = printphoto_E7)
 chord_E7.pack(side=LEFT, ipadx=4)
 
-chord_F7 = Button(frame, text="F7", fg="OrangeRed1", command = printphoto_F7)
+chord_F7 = Button(frame, text="F7", fg="Blue", command = printphoto_F7)
 chord_F7.pack(side=LEFT, ipadx=4)
 
-chord_FL7 = Button(frame, text="F#7", fg="OrangeRed1", command = printphoto_FL7)
+chord_FL7 = Button(frame, text="F#7", fg="Blue", command = printphoto_FL7)
 chord_FL7.pack(side=LEFT, ipadx=4)
 
-chord_G7 = Button(frame, text="G7", fg="OrangeRed1", command = printphoto_G7)
+chord_G7 = Button(frame, text="G7", fg="Blue", command = printphoto_G7)
 chord_G7.pack(side=LEFT, ipadx=4)
 
-chord_Ab7 = Button(frame, text="Ab7", fg="OrangeRed1", command = printphoto_Ab7)
+chord_Ab7 = Button(frame, text="Ab7", fg="Blue", command = printphoto_Ab7)
 chord_Ab7.pack(side=LEFT, ipadx=4)
 
-chord_A7 = Button(frame, text="A7", fg="OrangeRed1", command = printphoto_A7)
+chord_A7 = Button(frame, text="A7", fg="Blue", command = printphoto_A7)
 chord_A7.pack(side=LEFT, ipadx=4)
 
-chord_Bb7 = Button(frame, text="Bb7", fg="OrangeRed1", command = printphoto_Bb7)
+chord_Bb7 = Button(frame, text="Bb7", fg="Blue", command = printphoto_Bb7)
 chord_Bb7.pack(side=LEFT, ipadx=4)
 
-chord_B7 = Button(frame, text="B7", fg="OrangeRed1", command = printphoto_B7)
+chord_B7 = Button(frame, text="B7", fg="Blue", command = printphoto_B7)
 chord_B7.pack(side=LEFT, ipadx=4)
 
 #FRAME04
@@ -474,49 +524,5 @@ chord_Bbmaj7.pack(side=LEFT, ipadx=4)
 chord_Bmaj7 = Button(frame, text="Bmaj7", fg="SteelBlue4", command = printphoto_Bmaj7)
 chord_Bmaj7.pack(side=LEFT, ipadx=4)
 
-#FRAME03
-frame = Frame(root, bg=bgcolor)
-frame.pack(fill=X, pady=10)
-#MAJORCHORDNAME
-var = StringVar()
-label = Label( frame, textvariable=var, bg=bgcolor)
-var.set("Dominant 7th Chords")
-label.pack(side=LEFT, ipadx=4)
-#MAJORCHORD
-cord_Cm = Button(frame, text="C7", fg="blue", command = printphoto_Cm)
-cord_Cm.pack(side=LEFT, ipadx=4)
-
-cord_CLm = Button(frame, text="Db7", fg="blue", command = printphoto_CLm)
-cord_CLm.pack(side=LEFT, ipadx=4)
-
-cord_Dm = Button(frame, text="D7", fg="blue", command = printphoto_Dm)
-cord_Dm.pack(side=LEFT, ipadx=4)
-
-cord_Ebm = Button(frame, text="Eb7", fg="blue", command = printphoto_Ebm)
-cord_Ebm.pack(side=LEFT, ipadx=4)
-
-cord_DLm = Button(frame, text="E7", fg="blue", command = printphoto_DLm)
-cord_DLm.pack(side=LEFT, ipadx=4)
-
-cord_Em = Button(frame, text="F7", fg="blue", command = printphoto_Em)
-cord_Em.pack(side=LEFT, ipadx=4)
-
-cord_Fm = Button(frame, text="F#7", fg="blue", command = printphoto_Fm)
-cord_Fm.pack(side=LEFT, ipadx=4)
-
-cord_FLm = Button(frame, text="G7", fg="blue", command = printphoto_FLm)
-cord_FLm.pack(side=LEFT, ipadx=4)
-
-cord_Gm = Button(frame, text="Ab7", fg="blue", command = printphoto_Gm)
-cord_Gm.pack(side=LEFT, ipadx=4)
-
-cord_GLm = Button(frame, text="A7", fg="blue", command = printphoto_GLm)
-cord_GLm.pack(side=LEFT, ipadx=4)
-
-cord_Am = Button(frame, text="Bb7", fg="blue", command = printphoto_Am)
-cord_Am.pack(side=LEFT, ipadx=4)
-
-cord_Bbm = Button(frame, text="B7", fg="blue", command = printphoto_Bbm)
-cord_Bbm.pack(side=LEFT, ipadx=4)
 
 root.mainloop()
