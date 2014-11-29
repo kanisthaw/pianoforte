@@ -49,7 +49,7 @@ def printphoto_FL():
     img = PhotoImage(file="FL.gif")
     mlabel.config(image=img)
     mlabel.image = img
-    text = "FL MAJOR"
+    text = "F# MAJOR"
     labeltext.config(text=text)
 def printphoto_Gb():
     img = PhotoImage(file="Gb.gif")
@@ -94,54 +94,80 @@ def printphoto_Cm():
     img = PhotoImage(file="Cm.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Cm MINOR"
+    labeltext.config(text=text)
 def printphoto_CLm():
     img = PhotoImage(file="CLm.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "C#m MINOR"
+    labeltext.config(text=text)
 def printphoto_Dm():
     img = PhotoImage(file="Dm.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Dm MINOR"
+    labeltext.config(text=text)
 def printphoto_Ebm():
     img = PhotoImage(file="Ebm.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Ebm MINOR"
+    labeltext.config(text=text)
 def printphoto_DLm():
     img = PhotoImage(file="DLm.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "D#m MINOR"
+    labeltext.config(text=text)
 def printphoto_Em():
     img = PhotoImage(file="Em.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Em MINOR"
+    labeltext.config(text=text)
 def printphoto_Fm():
     img = PhotoImage(file="Fm.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Fm MINOR"
+    labeltext.config(text=text)
 def printphoto_FLm():
     img = PhotoImage(file="FLm.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "F#m MINOR"
+    labeltext.config(text=text)
 def printphoto_Gm():
     img = PhotoImage(file="Gm.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Gm MINOR"
+    labeltext.config(text=text)
 def printphoto_GLm():
     img = PhotoImage(file="GLm.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "G#m MINOR"
+    labeltext.config(text=text)
 def printphoto_Am():
     img = PhotoImage(file="Am.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "AM MINOR"
+    labeltext.config(text=text)
 def printphoto_Bbm():
     img = PhotoImage(file="Bbm.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Bbm MINOR"
+    labeltext.config(text=text)
 def printphoto_Bm():
     img = PhotoImage(file="Bm.gif")
     mlabel.config(image=img)
     mlabel.image = img
+    text = "Bm MINOR"
+    labeltext.config(text=text)
 
 #FUNTION3 FOR CHANGING IMAGE _ Dominant_7th
 
@@ -250,8 +276,8 @@ def printphoto_Bmaj7():
     mlabel.image = img
     
 #START_IMAGE
-labeltext = Label(root, text="PIANO CHORDS")
-labeltext.pack()
+labeltext = Label(root, text="PIANO CHORDS", bg=bgcolor)
+labeltext.pack(pady=10)
 img = PhotoImage(file="piano.gif")
 mlabel = Label( root, image=img)
 mlabel.pack()
