@@ -7,6 +7,8 @@ root.config(bg=bgcolor)
 root.title("Pianoforte")
 root.geometry("800x500")
 root.iconbitmap('icons.ico')
+root.minsize(width= 800, height = 500)
+root.maxsize(width= 800, height = 500)
 
 #FUNTION1 FOR CHANGING IMAGE _ MAJOR
 def printphoto_C():
