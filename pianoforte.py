@@ -325,11 +325,12 @@ def printphoto_Bmaj7():
     mlabel.image = img
     text = "Bmaj7 Major 7th Chords"
     labeltext.config(text=text)
-    
+
+
 #START_IMAGE
 labeltext = Label(root, text="PIANO CHORDS", bg=bgcolor, font="Tahoma", pady = 10)
 labeltext.pack(pady=10)
-img = PhotoImage(file="piano.gif")
+img = PhotoImage(file="logo.gif")
 mlabel = Label( root, image=img)
 mlabel.pack()
 
