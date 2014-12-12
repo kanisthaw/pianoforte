@@ -590,5 +590,11 @@ chord_Bmaj7 = Button(frame, text="Bmaj7", fg="SteelBlue4", command = printphoto_
                      relief="solid", borderwidth=1, font="Helvetica")
 chord_Bmaj7.pack(side=LEFT, ipadx=6, padx=5)
 
+frame = Frame(root, bg=bgcolor)
+frame.pack(fill=X, pady=10)
 
+var = StringVar()
+label = Label( frame, textvariable=var, bg=bgcolor, font="Helvetica")
+var.set("Copyright Kanistha 57070011 & Siamrath 57070")
+label.pack(side=RIGHT, ipadx=20)
 root.mainloop()
