@@ -330,7 +330,7 @@ def printphoto_Bmaj7():
 #START_IMAGE
 labeltext = Label(root, text="PIANO CHORDS", bg=bgcolor, font="Tahoma", pady = 10)
 labeltext.pack(pady=10)
-img = PhotoImage(file="logo.gif")
+img = PhotoImage(file="logos.gif")
 mlabel = Label( root, image=img)
 mlabel.pack()
 
@@ -595,6 +595,6 @@ frame.pack(fill=X, pady=10)
 
 var = StringVar()
 label = Label( frame, textvariable=var, bg=bgcolor, font="Helvetica")
-var.set("Copyright Kanistha 57070011 & Siamrath 57070")
+var.set("Copyright Kanistha 57070011 & Siamrath 57070121")
 label.pack(side=RIGHT, ipadx=20)
 root.mainloop()

@@ -4,8 +4,9 @@ bgcolor = "#FFFFFF"
 root = Tk()
 root.config(bg=bgcolor)
 root.title("Pianoforte")
-root.geometry("800x500")
+root.geometry("1200x600")
 root.iconbitmap('icons.ico')
+
 
 #IMAGE CHANGING
 #FUNTION1 FOR CHANGING IMAGE _ MAJOR
@@ -324,66 +325,85 @@ def printphoto_Bmaj7():
     mlabel.image = img
     text = "Bmaj7 Major 7th Chords"
     labeltext.config(text=text)
-    
+
+
 #START_IMAGE
-labeltext = Label(root, text="PIANO CHORDS", bg=bgcolor)
+labeltext = Label(root, text="PIANO CHORDS", bg=bgcolor, font="Tahoma", pady = 10)
 labeltext.pack(pady=10)
-img = PhotoImage(file="piano.gif")
+img = PhotoImage(file="logo.gif")
 mlabel = Label( root, image=img)
 mlabel.pack()
 
-
-
+   
 #BUTTON
+frame = Frame(root, bg=bgcolor)
+frame.pack(fill=X)
+var = StringVar()
+label = Label(frame, textvariable=var, bg=bgcolor, font="Helvetica")
+var.set("BASIC CHORDS")
+label.pack(side=LEFT)
 #FRAME01
 frame = Frame(root, bg=bgcolor)
 frame.pack(fill=X, pady=10)
+
 #MAJORCHORDNAME
 var = StringVar()
-label = Label( frame, textvariable=var, bg=bgcolor)
+label = Label(frame, textvariable=var, bg=bgcolor, font="Helvetica")
 var.set(" Major Chords")
-label.pack(side=LEFT)
+label.pack(side=LEFT, ipadx=18)
 #MAJORCHORD
+chord_c = Button(frame, text="C", fg="Firebrick1", command = printphoto_C,
+                 relief="solid", borderwidth=1, font="Helvetica")
+chord_c.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_c = Button(frame, text="C", fg="Firebrick1", command = printphoto_C)
-chord_c.pack(side=LEFT, ipadx=4)
+chord_Db = Button(frame, text="Db", fg="Firebrick1", command = printphoto_Db,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_Db.pack(side=LEFT, ipadx=12, padx=5)
 
-chord_Db = Button(frame, text="Db", fg="Firebrick1", command = printphoto_Db)
-chord_Db.pack(side=LEFT, ipadx=4)
+chord_D = Button(frame, text="D", fg="Firebrick1", command = printphoto_D,
+                 relief="solid", borderwidth=1, font="Helvetica")
+chord_D.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_D = Button(frame, text="D", fg="Firebrick1", command = printphoto_D)
-chord_D.pack(side=LEFT, ipadx=4)
+chord_Eb = Button(frame, text="Eb", fg="Firebrick1", command = printphoto_Eb,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_Eb.pack(side=LEFT, ipadx=12, padx=5)
 
-chord_Eb = Button(frame, text="Eb", fg="Firebrick1", command = printphoto_Eb)
-chord_Eb.pack(side=LEFT, ipadx=4)
+chord_E = Button(frame, text="E", fg="Firebrick1", command = printphoto_E,
+                 relief="solid", borderwidth=1, font="Helvetica")
+chord_E.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_E = Button(frame, text="E", fg="Firebrick1", command = printphoto_E)
-chord_E.pack(side=LEFT, ipadx=4)
+chord_F = Button(frame, text="F", fg="Firebrick1", command = printphoto_F,
+                 relief="solid", borderwidth=1, font="Helvetica")
+chord_F.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_F = Button(frame, text="F", fg="Firebrick1", command = printphoto_F)
-chord_F.pack(side=LEFT, ipadx=4)
+chord_FL = Button(frame, text="F#", fg="Firebrick1", command = printphoto_FL,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_FL.pack(side=LEFT, ipadx=12, padx=5)
 
-chord_FL = Button(frame, text="F#", fg="Firebrick1", command = printphoto_FL)
-chord_FL.pack(side=LEFT, ipadx=4)
+chord_Gb = Button(frame, text="Gb", fg="Firebrick1", command = printphoto_Gb,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_Gb.pack(side=LEFT, ipadx=12, padx=5)
 
-chord_Gb = Button(frame, text="Gb", fg="Firebrick1", command = printphoto_Gb)
-chord_Gb.pack(side=LEFT, ipadx=4)
+chord_G = Button(frame, text="G", fg="Firebrick1", command = printphoto_G,
+                 relief="solid", borderwidth=1, font="Helvetica")
+chord_G.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_G = Button(frame, text="G", fg="Firebrick1", command = printphoto_G)
-chord_G.pack(side=LEFT, ipadx=4)
+chord_Ab = Button(frame, text="Ab", fg="Firebrick1", command = printphoto_Ab,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_Ab.pack(side=LEFT, ipadx=12, padx=5)
 
-chord_Ab = Button(frame, text="Ab", fg="Firebrick1", command = printphoto_Ab)
-chord_Ab.pack(side=LEFT, ipadx=4)
+chord_A = Button(frame, text="A", fg="Firebrick1", command = printphoto_A,
+                 relief="solid", borderwidth=1, font="Helvetica")
+chord_A.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_A = Button(frame, text="A", fg="Firebrick1", command = printphoto_A)
-chord_A.pack(side=LEFT, ipadx=4)
-
-chord_Bb = Button(frame, text="Bb", fg="Firebrick1", command = printphoto_Bb)
-chord_Bb.pack(side=LEFT, ipadx=4)
+chord_Bb = Button(frame, text="Bb", fg="Firebrick1", command = printphoto_Bb,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_Bb.pack(side=LEFT, ipadx=12, padx=5)
 
 
-chord_B = Button(frame, text="B", fg="Firebrick1", command = printphoto_B)
-chord_B.pack(side=LEFT, ipadx=4)
+chord_B = Button(frame, text="B", fg="Firebrick1", command = printphoto_B,
+                 relief="solid", borderwidth=1, font="Helvetica")
+chord_B.pack(side=LEFT, ipadx=15, padx=5)
 
 
 #FRAME02
@@ -391,139 +411,190 @@ frame = Frame(root, bg=bgcolor)
 frame.pack(fill=X, pady=10)
 #MAJORCHORDNAME
 var = StringVar()
-label = Label( frame, textvariable=var, bg=bgcolor)
+label = Label( frame, textvariable=var, bg=bgcolor, font="Helvetica")
 var.set("Minor Chords")
-label.pack(side=LEFT, ipadx=4)
+label.pack(side=LEFT, ipadx=20)
 #MAJORCHORD
-chord_Cm = Button(frame, text="Cm", fg="SeaGreen", command = printphoto_Cm)
-chord_Cm.pack(side=LEFT, ipadx=4)
+chord_Cm = Button(frame, text="Cm", fg="SeaGreen", command = printphoto_Cm,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_Cm.pack(side=LEFT, ipadx=10, padx=5)
 
-chord_CLm = Button(frame, text="C#m", fg="SeaGreen", command = printphoto_CLm)
-chord_CLm.pack(side=LEFT, ipadx=4)
+chord_CLm = Button(frame, text="C#m", fg="SeaGreen", command = printphoto_CLm,
+                   relief="solid", borderwidth=1, font="Helvetica")
+chord_CLm.pack(side=LEFT, ipadx=10, padx=5)
 
-chord_Dm = Button(frame, text="Dm", fg="SeaGreen", command = printphoto_Dm)
-chord_Dm.pack(side=LEFT, ipadx=4)
+chord_Dm = Button(frame, text="Dm", fg="SeaGreen", command = printphoto_Dm,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_Dm.pack(side=LEFT, ipadx=10, padx=5)
 
-chord_Ebm = Button(frame, text="Ebm", fg="SeaGreen", command = printphoto_Ebm)
-chord_Ebm.pack(side=LEFT, ipadx=4)
+chord_Ebm = Button(frame, text="Ebm", fg="SeaGreen", command = printphoto_Ebm,
+                   relief="solid", borderwidth=1, font="Helvetica")
+chord_Ebm.pack(side=LEFT, ipadx=10, padx=5)
 
-chord_DLm = Button(frame, text="D#m", fg="SeaGreen", command = printphoto_DLm)
-chord_DLm.pack(side=LEFT, ipadx=4)
+chord_DLm = Button(frame, text="D#m", fg="SeaGreen", command = printphoto_DLm,
+                   relief="solid", borderwidth=1, font="Helvetica")
+chord_DLm.pack(side=LEFT, ipadx=10, padx=5)
 
-chord_Em = Button(frame, text="Em", fg="SeaGreen", command = printphoto_Em)
-chord_Em.pack(side=LEFT, ipadx=4)
+chord_Em = Button(frame, text="Em", fg="SeaGreen", command = printphoto_Em,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_Em.pack(side=LEFT, ipadx=10, padx=5)
 
-chord_Fm = Button(frame, text="Fm", fg="SeaGreen", command = printphoto_Fm)
-chord_Fm.pack(side=LEFT, ipadx=4)
+chord_Fm = Button(frame, text="Fm", fg="SeaGreen", command = printphoto_Fm,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_Fm.pack(side=LEFT, ipadx=10, padx=5)
 
-chord_FLm = Button(frame, text="F#m", fg="SeaGreen", command = printphoto_FLm)
-chord_FLm.pack(side=LEFT, ipadx=4)
+chord_FLm = Button(frame, text="F#m", fg="SeaGreen", command = printphoto_FLm,
+                   relief="solid", borderwidth=1, font="Helvetica")
+chord_FLm.pack(side=LEFT, ipadx=10, padx=5)
 
-chord_Gm = Button(frame, text="Gm", fg="SeaGreen", command = printphoto_Gm)
-chord_Gm.pack(side=LEFT, ipadx=4)
+chord_Gm = Button(frame, text="Gm", fg="SeaGreen", command = printphoto_Gm,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_Gm.pack(side=LEFT, ipadx=10, padx=5)
 
-chord_GLm = Button(frame, text="G#m", fg="SeaGreen", command = printphoto_GLm)
-chord_GLm.pack(side=LEFT, ipadx=4)
+chord_GLm = Button(frame, text="G#m", fg="SeaGreen", command = printphoto_GLm,
+                   relief="solid", borderwidth=1, font="Helvetica")
+chord_GLm.pack(side=LEFT, ipadx=10, padx=5)
 
-chord_Am = Button(frame, text="Am", fg="SeaGreen", command = printphoto_Am)
-chord_Am.pack(side=LEFT, ipadx=4)
+chord_Am = Button(frame, text="Am", fg="SeaGreen", command = printphoto_Am,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_Am.pack(side=LEFT, ipadx=10, padx=5)
 
-chord_Bbm = Button(frame, text="Bbm", fg="SeaGreen", command = printphoto_Bbm)
-chord_Bbm.pack(side=LEFT, ipadx=4)
+chord_Bbm = Button(frame, text="Bbm", fg="SeaGreen", command = printphoto_Bbm,
+                   relief="solid", borderwidth=1, font="Helvetica")
+chord_Bbm.pack(side=LEFT, ipadx=10, padx=5)
 
-chord_Bm = Button(frame, text="Bm", fg="SeaGreen", command = printphoto_Bm)
-chord_Bm.pack(side=LEFT, ipadx=4)
+chord_Bm = Button(frame, text="Bm", fg="SeaGreen", command = printphoto_Bm,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_Bm.pack(side=LEFT, ipadx=10, padx=5)
+
+
+frame = Frame(root, bg=bgcolor)
+frame.pack(fill=X, pady=10)
+var = StringVar()
+label = Label(frame, textvariable=var, bg=bgcolor, font="Tahoma")
+var.set("SPECIAL CHORDS")
+label.pack(side=LEFT)
 
 #FRAME03
 frame = Frame(root, bg=bgcolor)
 frame.pack(fill=X, pady=10)
 #MAJORCHORDNAME
 var = StringVar()
-label = Label( frame, textvariable=var, bg=bgcolor)
+label = Label( frame, textvariable=var, bg=bgcolor, font="Helvetica")
 var.set("Dominant 7th Chords")
-label.pack(side=LEFT, ipadx=4)
+label.pack(side=LEFT, ipadx=20)
 #Dominant_7th_Chords
-chord_C7 = Button(frame, text="C7", fg="Blue", command = printphoto_C7)
-chord_C7.pack(side=LEFT, ipadx=4)
+chord_C7 = Button(frame, text="C7", fg="Blue", command = printphoto_C7,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_C7.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_Db7 = Button(frame, text="Db7", fg="Blue", command = printphoto_Db7)
-chord_Db7.pack(side=LEFT, ipadx=4)
+chord_Db7 = Button(frame, text="Db7", fg="Blue", command = printphoto_Db7,
+                   relief="solid", borderwidth=1, font="Helvetica")
+chord_Db7.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_D7 = Button(frame, text="D7", fg="Blue", command = printphoto_D7)
-chord_D7.pack(side=LEFT, ipadx=4)
+chord_D7 = Button(frame, text="D7", fg="Blue", command = printphoto_D7,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_D7.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_Eb7 = Button(frame, text="Eb7", fg="Blue", command = printphoto_Eb7)
-chord_Eb7.pack(side=LEFT, ipadx=4)
+chord_Eb7 = Button(frame, text="Eb7", fg="Blue", command = printphoto_Eb7,
+                   relief="solid", borderwidth=1, font="Helvetica")
+chord_Eb7.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_E7 = Button(frame, text="E7", fg="Blue", command = printphoto_E7)
-chord_E7.pack(side=LEFT, ipadx=4)
+chord_E7 = Button(frame, text="E7", fg="Blue", command = printphoto_E7,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_E7.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_F7 = Button(frame, text="F7", fg="Blue", command = printphoto_F7)
-chord_F7.pack(side=LEFT, ipadx=4)
+chord_F7 = Button(frame, text="F7", fg="Blue", command = printphoto_F7,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_F7.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_FL7 = Button(frame, text="F#7", fg="Blue", command = printphoto_FL7)
-chord_FL7.pack(side=LEFT, ipadx=4)
+chord_FL7 = Button(frame, text="F#7", fg="Blue", command = printphoto_FL7,
+                   relief="solid", borderwidth=1, font="Helvetica")
+chord_FL7.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_G7 = Button(frame, text="G7", fg="Blue", command = printphoto_G7)
-chord_G7.pack(side=LEFT, ipadx=4)
+chord_G7 = Button(frame, text="G7", fg="Blue", command = printphoto_G7,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_G7.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_Ab7 = Button(frame, text="Ab7", fg="Blue", command = printphoto_Ab7)
-chord_Ab7.pack(side=LEFT, ipadx=4)
+chord_Ab7 = Button(frame, text="Ab7", fg="Blue", command = printphoto_Ab7,
+                   relief="solid", borderwidth=1, font="Helvetica")
+chord_Ab7.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_A7 = Button(frame, text="A7", fg="Blue", command = printphoto_A7)
-chord_A7.pack(side=LEFT, ipadx=4)
+chord_A7 = Button(frame, text="A7", fg="Blue", command = printphoto_A7,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_A7.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_Bb7 = Button(frame, text="Bb7", fg="Blue", command = printphoto_Bb7)
-chord_Bb7.pack(side=LEFT, ipadx=4)
+chord_Bb7 = Button(frame, text="Bb7", fg="Blue", command = printphoto_Bb7,
+                   relief="solid", borderwidth=1, font="Helvetica")
+chord_Bb7.pack(side=LEFT, ipadx=15, padx=5)
 
-chord_B7 = Button(frame, text="B7", fg="Blue", command = printphoto_B7)
-chord_B7.pack(side=LEFT, ipadx=4)
+chord_B7 = Button(frame, text="B7", fg="Blue", command = printphoto_B7,
+                  relief="solid", borderwidth=1, font="Helvetica")
+chord_B7.pack(side=LEFT, ipadx=15, padx=5)
 
 #FRAME04
 frame = Frame(root, bg=bgcolor)
 frame.pack(fill=X, pady=10)
 #MAJOR7CHORDNAME
 var = StringVar()
-label = Label( frame, textvariable=var, bg=bgcolor)
+label = Label( frame, textvariable=var, bg=bgcolor, font="Helvetica")
 var.set("Major 7th Chords")
-label.pack(side=LEFT, ipadx=4)
+label.pack(side=LEFT, ipadx=20)
 #Major_7th_Chords
-chord_Cmaj7 = Button(frame, text="Cmaj7", fg="SteelBlue4", command = printphoto_Cmaj7)
-chord_Cmaj7.pack(side=LEFT, ipadx=4)
+chord_Cmaj7 = Button(frame, text="Cmaj7", fg="SteelBlue4", command = printphoto_Cmaj7,
+                     relief="solid", borderwidth=1, font="Helvetica")
+chord_Cmaj7.pack(side=LEFT, ipadx=6, padx=5)
 
-chord_Dbmaj7 = Button(frame, text="Dbmaj7", fg="SteelBlue4", command = printphoto_Dbmaj7)
-chord_Dbmaj7.pack(side=LEFT, ipadx=4)
+chord_Dbmaj7 = Button(frame, text="Dbmaj7", fg="SteelBlue4", command = printphoto_Dbmaj7,
+                      relief="solid", borderwidth=1, font="Helvetica")
+chord_Dbmaj7.pack(side=LEFT, ipadx=6, padx=5)
 
-chord_Dmaj7 = Button(frame, text="Dmaj7", fg="SteelBlue4", command = printphoto_Dmaj7)
-chord_Dmaj7.pack(side=LEFT, ipadx=4)
+chord_Dmaj7 = Button(frame, text="Dmaj7", fg="SteelBlue4", command = printphoto_Dmaj7,
+                     relief="solid", borderwidth=1, font="Helvetica")
+chord_Dmaj7.pack(side=LEFT, ipadx=6, padx=5)
 
-chord_Ebmaj7 = Button(frame, text="Ebmaj7", fg="SteelBlue4", command = printphoto_Ebmaj7)
-chord_Ebmaj7.pack(side=LEFT, ipadx=4)
+chord_Ebmaj7 = Button(frame, text="Ebmaj7", fg="SteelBlue4", command = printphoto_Ebmaj7,
+                      relief="solid", borderwidth=1, font="Helvetica")
+chord_Ebmaj7.pack(side=LEFT, ipadx=6, padx=5)
 
-chord_Emaj7 = Button(frame, text="Emaj7", fg="SteelBlue4", command = printphoto_Emaj7)
-chord_Emaj7.pack(side=LEFT, ipadx=4)
+chord_Emaj7 = Button(frame, text="Emaj7", fg="SteelBlue4", command = printphoto_Emaj7,
+                     relief="solid", borderwidth=1, font="Helvetica")
+chord_Emaj7.pack(side=LEFT, ipadx=6, padx=5)
 
-chord_Fmaj7 = Button(frame, text="Fmaj7", fg="SteelBlue4", command = printphoto_Fmaj7)
-chord_Fmaj7.pack(side=LEFT, ipadx=4)
+chord_Fmaj7 = Button(frame, text="Fmaj7", fg="SteelBlue4", command = printphoto_Fmaj7,
+                     relief="solid", borderwidth=1, font="Helvetica")
+chord_Fmaj7.pack(side=LEFT, ipadx=6, padx=5)
 
-chord_FLmaj7 = Button(frame, text="F#maj7", fg="SteelBlue4", command = printphoto_FLmaj7)
-chord_FLmaj7.pack(side=LEFT, ipadx=4)
+chord_FLmaj7 = Button(frame, text="F#maj7", fg="SteelBlue4", command = printphoto_FLmaj7,
+                      relief="solid", borderwidth=1, font="Helvetica")
+chord_FLmaj7.pack(side=LEFT, ipadx=6, padx=5)
 
-chord_Gmaj7 = Button(frame, text="Gmaj7", fg="SteelBlue4", command = printphoto_Gmaj7)
-chord_Gmaj7.pack(side=LEFT, ipadx=4)
+chord_Gmaj7 = Button(frame, text="Gmaj7", fg="SteelBlue4", command = printphoto_Gmaj7,
+                     relief="solid", borderwidth=1, font="Helvetica")
+chord_Gmaj7.pack(side=LEFT, ipadx=6, padx=5)
 
-chord_Abmaj7 = Button(frame, text="Abmaj7", fg="SteelBlue4", command = printphoto_Abmaj7)
-chord_Abmaj7.pack(side=LEFT, ipadx=4)
+chord_Abmaj7 = Button(frame, text="Abmaj7", fg="SteelBlue4", command = printphoto_Abmaj7,
+                      relief="solid", borderwidth=1, font="Helvetica")
+chord_Abmaj7.pack(side=LEFT, ipadx=6, padx=5)
 
-chord_Amaj7 = Button(frame, text="Amaj7", fg="SteelBlue4", command = printphoto_Amaj7)
-chord_Amaj7.pack(side=LEFT, ipadx=4)
+chord_Amaj7 = Button(frame, text="Amaj7", fg="SteelBlue4", command = printphoto_Amaj7,
+                     relief="solid", borderwidth=1, font="Helvetica")
+chord_Amaj7.pack(side=LEFT, ipadx=6, padx=5)
 
-chord_Bbmaj7 = Button(frame, text="Bbmaj7", fg="SteelBlue4", command = printphoto_Bbmaj7)
-chord_Bbmaj7.pack(side=LEFT, ipadx=4)
-
-
-chord_Bmaj7 = Button(frame, text="Bmaj7", fg="SteelBlue4", command = printphoto_Bmaj7)
-chord_Bmaj7.pack(side=LEFT, ipadx=4)
+chord_Bbmaj7 = Button(frame, text="Bbmaj7", fg="SteelBlue4", command = printphoto_Bbmaj7,
+                      relief="solid", borderwidth=1, font="Helvetica")
+chord_Bbmaj7.pack(side=LEFT, ipadx=6, padx=5)
 
 
+chord_Bmaj7 = Button(frame, text="Bmaj7", fg="SteelBlue4", command = printphoto_Bmaj7,
+                     relief="solid", borderwidth=1, font="Helvetica")
+chord_Bmaj7.pack(side=LEFT, ipadx=6, padx=5)
+
+frame = Frame(root, bg=bgcolor)
+frame.pack(fill=X, pady=10)
+
+var = StringVar()
+label = Label( frame, textvariable=var, bg=bgcolor, font="Helvetica")
+var.set("Copyright Kanistha 57070011 & Siamrath 57070")
+label.pack(side=RIGHT, ipadx=20)
 root.mainloop()
