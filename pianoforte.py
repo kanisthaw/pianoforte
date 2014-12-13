@@ -6,7 +6,7 @@ easy to find easy to learn
 
 from Tkinter import *
 
-bgcolor = "#FFFFFF"
+bgcolor = "#b2e5e5"
 root = Tk()
 root.config(bg=bgcolor)
 root.title("Pianoforte")
