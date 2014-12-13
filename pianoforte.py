@@ -340,7 +340,7 @@ frame = Frame(root, bg=bgcolor)
 frame.pack(fill=X)
 var = StringVar()
 label = Label(frame, textvariable=var, bg=bgcolor, font="Helvetica")
-var.set("BASIC CHORDS")
+var.set(" BASIC CHORDS")
 label.pack(side=LEFT)
 #FRAME01
 frame = Frame(root, bg=bgcolor)
@@ -472,7 +472,7 @@ frame = Frame(root, bg=bgcolor)
 frame.pack(fill=X, pady=10)
 var = StringVar()
 label = Label(frame, textvariable=var, bg=bgcolor, font="Tahoma")
-var.set("SPECIAL CHORDS")
+var.set(" SPECIAL CHORDS")
 label.pack(side=LEFT)
 
 #FRAME03
