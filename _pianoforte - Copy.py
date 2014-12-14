@@ -5,17 +5,16 @@ easy to find easy to learn
 """
 
 from Tkinter import *
-
-bgcolor = "#b2e5e5"
+bgcolor = "#FFFFFF"
 root = Tk()
 root.config(bg=bgcolor)
-root.title("Pianoforte")
+root.title("Piano_Forte")
 root.geometry("1200x600")
 root.iconbitmap('icons.ico')
+root.resizable(False, False)
 
 #IMAGE CHANGING
 #FUNTION1 FOR CHANGING IMAGE _ MAJOR
-
 def printphoto_C():
     img = PhotoImage(file="C.gif")
     mlabel.config(image=img)
@@ -334,7 +333,7 @@ def printphoto_Bmaj7():
 
 
 #START_IMAGE
-labeltext = Label(root, text="PIANO CHORDS", bg=bgcolor, font="Tahoma, 18", pady = 10)
+labeltext = Label(root, text="PIANO CHORDS", bg=bgcolor, font="Tahoma, 21", pady = 10)
 labeltext.pack(pady=10)
 img = PhotoImage(file="logos.gif")
 mlabel = Label( root, image=img)
@@ -355,8 +354,8 @@ frame.pack(fill=X, pady=10)
 #MAJORCHORDNAME
 var = StringVar()
 label = Label(frame, textvariable=var, bg=bgcolor, font="Helvetica, 13")
-var.set(" Major Chords")
-label.pack(side=LEFT, ipadx=18)
+var.set("Major Chords")
+label.pack(side=LEFT, ipadx=20)
 #MAJORCHORD
 chord_c = Button(frame, text="C", fg="Firebrick1", command = printphoto_C,
                  relief="solid", borderwidth=1, font="Helvetica, 10")
@@ -423,7 +422,7 @@ label.pack(side=LEFT, ipadx=20)
 #MAJORCHORD
 chord_Cm = Button(frame, text="Cm", fg="SeaGreen", command = printphoto_Cm,
                   relief="solid", borderwidth=1, font="Helvetica, 10")
-chord_Cm.pack(side=LEFT, ipadx=10, padx=5)
+chord_Cm.pack(side=LEFT, ipadx=10, padx=4)
 
 chord_CLm = Button(frame, text="C#m", fg="SeaGreen", command = printphoto_CLm,
                    relief="solid", borderwidth=1, font="Helvetica, 10")
@@ -431,7 +430,7 @@ chord_CLm.pack(side=LEFT, ipadx=10, padx=5)
 
 chord_Dm = Button(frame, text="Dm", fg="SeaGreen", command = printphoto_Dm,
                   relief="solid", borderwidth=1, font="Helvetica, 10")
-chord_Dm.pack(side=LEFT, ipadx=10, padx=5)
+chord_Dm.pack(side=LEFT, ipadx=11, padx=5)
 
 chord_Ebm = Button(frame, text="Ebm", fg="SeaGreen", command = printphoto_Ebm,
                    relief="solid", borderwidth=1, font="Helvetica, 10")
