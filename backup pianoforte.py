@@ -5,16 +5,17 @@ easy to find easy to learn
 """
 
 from Tkinter import *
-bgcolor = "#FFFFFF"
+
+bgcolor = "#b2e5e5"
 root = Tk()
 root.config(bg=bgcolor)
-root.title("Piano_Forte")
+root.title("Pianoforte")
 root.geometry("1200x600")
 root.iconbitmap('icons.ico')
-root.resizable(False, False)
 
 #IMAGE CHANGING
 #FUNTION1 FOR CHANGING IMAGE _ MAJOR
+
 def printphoto_C():
     img = PhotoImage(file="C.gif")
     mlabel.config(image=img)
